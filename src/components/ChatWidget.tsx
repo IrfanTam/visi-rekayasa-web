@@ -78,6 +78,41 @@ export default function ChatWidget() {
     }
   };
 
+  const renderFormattedContent = (text: string) => {
+    const lines = text.split("\n");
+    return lines.map((line, lIdx) => {
+      const cleanLine = line.trim();
+      const isBullet = cleanLine.startsWith("* ") || cleanLine.startsWith("- ");
+      const contentToProcess = isBullet ? cleanLine.substring(2) : line;
+
+      const parts = contentToProcess.split(/(\*\*.*?\*\*)/g);
+      const formattedParts = parts.map((part, pIdx) => {
+        if (part.startsWith("**") && part.endsWith("**")) {
+          return (
+            <strong key={pIdx} className="font-bold text-cyan-300">
+              {part.slice(2, -2)}
+            </strong>
+          );
+        }
+        return part;
+      });
+
+      if (isBullet) {
+        return (
+          <li key={lIdx} className="ml-4 list-disc mt-1 text-slate-200">
+            {formattedParts}
+          </li>
+        );
+      }
+
+      return (
+        <p key={lIdx} className={lIdx > 0 ? "mt-1.5" : ""}>
+          {formattedParts}
+        </p>
+      );
+    });
+  };
+
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {/* Tombol Melayang (Floating Button) */}
@@ -129,13 +164,13 @@ export default function ChatWidget() {
                 }`}
               >
                 <div
-                  className={`max-w-[82%] p-3.5 rounded-2xl leading-relaxed ${
+                  className={`max-w-[85%] p-3.5 rounded-2xl leading-relaxed ${
                     msg.role === "user"
                       ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-medium rounded-tr-none"
-                      : "bg-slate-900 border border-slate-800 text-slate-200 rounded-tl-none"
+                      : "bg-slate-900 border border-slate-800 text-slate-200 rounded-tl-none space-y-1"
                   }`}
                 >
-                  {msg.content}
+                  {renderFormattedContent(msg.content)}
                 </div>
               </div>
             ))}
