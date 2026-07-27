@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 PT Visi Rekayasa Nusantara (PT VRN) — Official Landing Page
 
-## Getting Started
+Official Landing Page untuk **PT Visi Rekayasa Nusantara**, penyedia layanan rekayasa teknologi *end-to-end* (Artificial Intelligence, Computer Vision, Embedded Software, IoT Hardware, dan 3D Prototyping).
 
-First, run the development server:
+![PT Visi Rekayasa Nusantara](public/pt%20visi%20rekayasa%20half.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Fitur Utama Website
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- ** Clean Tech Dark Theme:** Estetika modern berkonsep *Clean Tech* dengan aksen warna Cyan & Blue, gradasi *glow*, dan tipografi Montserrat dari Google Fonts.
+- ** Modular Component Architecture:** Dibangun dengan arsitektur komponen Next.js yang bersih, terpisah, dan reusable (`Navbar`, `HeroSection`, `AboutSection`, `ServicesSection`, `PortfolioSection`, `WorkflowSection`, `WhyUsSection`, `Footer`).
+- ** Interactive Portfolio Carousel:** Showcase 4 studi kasus proyek riset unggulan (`TBScope AI`, `Smartdentiva`, `AcneScan`, `HeMoVision`) dengan navigasi panah & *dot indicators*.
+- ** Founder Profile & Academic Papers:** Integrasi profil **Muhammad Irfan Tam Tomo** (Founder & Lead Engineer — S2 Terapan PENS & D4 Poltekkes Jakarta II) beserta 3 publikasi ilmiah terverifikasi di IEEE Xplore, JOIV Journal, dan JPM UTDI.
+- ** SEO & OpenGraph Ready:** Dilengkapi metadata SEO, favicon resmi, dan kartu preview sosial media saat link dibagikan via WhatsApp & LinkedIn.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Stack Teknologi
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** [Next.js 15 (App Router)](https://nextjs.org/)
+- **Library:** [React 19](https://react.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Font:** Montserrat (`next/font/google`)
+- **Bahasa:** TypeScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Cara Menjalankan Lokal (Development)
 
-## Deploy on Vercel
+1. **Clone repositori:**
+   ```bash
+   git clone https://github.com/IrfanTam/visi-rekayasa-web.git
+   cd visi-rekayasa-web
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instal dependensi:**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Jalankan server pengembangan:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Buka di browser:**
+   Akses `http://localhost:3000`
+
+---
+
+## 🏢 Kontak Resmi PT Visi Rekayasa Nusantara
+
+- **Alamat:** Matraman, Jakarta Timur, Indonesia
+- **WhatsApp:** [+62 819-1041-1103](https://wa.me/6281910411103)
+- **Email:** visirekayasanusantara@gmail.com
+- **Jam Operasional:** Senin – Sabtu (09.00 – 18.00 WIB)
+
+---
+© 2026 PT Visi Rekayasa Nusantara. All rights reserved.
