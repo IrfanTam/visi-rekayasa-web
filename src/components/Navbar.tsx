@@ -80,7 +80,7 @@ export default function Navbar() {
                     <a href="#alur-kerja" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-slate-200 text-sm font-medium">Alur Kerja</a>
                     <a href="#kontak" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-slate-200 text-sm font-medium">Kontak</a>
                     <a href={waUrl} target="_blank" rel="noopener noreferrer" className="block w-full text-center mt-4 px-4 py-2.5 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950">
-                        Konsultasi Gratis Via WA
+                        Hubungi Kami Via WA
                     </a>
                 </div>
             )}
