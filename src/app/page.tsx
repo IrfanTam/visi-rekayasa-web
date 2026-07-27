@@ -6,6 +6,7 @@ import PortfolioSection from "@/components/PortfolioSection";
 import WorkflowSection from "@/components/WorkflowSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import Footer from "@/components/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyUsSection />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
